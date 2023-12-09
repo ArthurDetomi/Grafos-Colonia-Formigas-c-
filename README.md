@@ -96,4 +96,40 @@ Melhor ordem do tour: 6 2 13 11 9 7 5 3 10 0 12 1 14 8 4
 
 ## Problema
 
-## Solução
+O problema que estamos tentando resolver envolve a busca de caminhos em grafos. Este é um problema computacional comum que pode ser encontrado em várias situações do mundo real, como roteamento de redes de computadores e planejamento de transporte urbano.
+
+Para resolver este problema, utilizamos o algoritmo de otimização da colônia de formigas (ACO). O ACO é uma heurística baseada em probabilidade que foi inspirada no comportamento das formigas ao saírem de sua colônia para encontrar comida. As formigas andam sem rumo até que, encontrada comida, elas retornam à colônia deixando um rastro de feromônio. Se outras formigas encontram um desses rastros, elas tendem a não seguir mais caminhos aleatórios. Em vez disso, seguem a trilha encontrada, retornando e inclusive enfatizando se acharam alimento.
+
+No algoritmo ACO, "formigas virtuais" caminham por um grafo que representa o problema a ser resolvido. O ACO tem sido utilizado para produzir soluções quase ótimas para o problema do caixeiro viajante. Este algoritmo apresenta uma vantagem sobre outros algoritmos heurísticos, como o algoritmo de arrefecimento simulado e o algoritmo genético, especialmente se o grafo muda dinamicamente. A colônia de formigas pode mudar várias vezes e se adaptar às mudanças em tempo real.
+
+## Solução:
+
+O código fornecido implementa um algoritmo de otimização baseado em Colônia de Formigas para resolver o problema do Caixeiro Viajante (TSP). Aqui está uma visão geral do funcionamento do algoritmo:
+
+1. **Estruturas de Dados:**
+   - `Formiga`: Representa uma formiga que percorre o caminho. Mantém informações como o tamanho do caminho, as cidades visitadas e o caminho percorrido.
+   - `OtimizacaoColoniaFormigas`: Classe principal que contém parâmetros e métodos para otimização.
+
+2. **Inicialização:**
+   - O programa lê o número de cidades e cria uma instância da classe `OtimizacaoColoniaFormigas` com base nesse número.
+   - A matriz de distâncias entre as cidades (`grafo`) é lida a partir da entrada padrão.
+
+3. **Otimização:**
+   - O algoritmo executa três tentativas de otimização.
+   - Cada tentativa envolve:
+     - Preparação das formigas.
+     - Limpeza das trilhas de feromônios.
+     - Iterações para mover as formigas, calcular probabilidades e atualizar as trilhas.
+
+4. **Seleção de Próxima Cidade:**
+   - A escolha da próxima cidade é feita com base nas probabilidades calculadas a partir dos feromônios e das distâncias entre as cidades.
+
+5. **Atualização de Feromônios:**
+   - As trilhas de feromônios são atualizadas de acordo com a contribuição de cada formiga.
+
+6. **Melhor Solução:**
+   - A melhor solução (melhor ordem do tour e seu comprimento) é atualizada ao longo das iterações.
+
+7. **Saída:**
+   - Ao final de cada tentativa, a melhor ordem do tour e seu comprimento são exibidos.
+
