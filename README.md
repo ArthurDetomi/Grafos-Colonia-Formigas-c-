@@ -138,7 +138,7 @@ O código fornecido implementa um algoritmo de otimização baseado em Colônia 
    - Taxa de evaporação do feromônio("*ρ*") = 0.5;
    - Quantidade de formigas("*m*") = |V|;
    - Constante de atualização do feromônio("*Q*") = 500;
-   - Feromônio incial para todas as arestas("*t0*") = 1.0;
+   - Feromônio incial para todas as arestas("*τ0*") = 1.0;
      
 8. **Saída:**
    - Ao final de cada tentativa, a melhor ordem do tour e seu comprimento são exibidos.
