@@ -131,7 +131,15 @@ O código fornecido implementa um algoritmo de otimização baseado em Colônia 
 
 6. **Melhor Solução:**
    - A melhor solução (melhor ordem do tour e seu comprimento) é atualizada ao longo das iterações.
-
-7. **Saída:**
+     
+7.  **Valores Utilizados nos Parâmetros:**
+   - Parâmetro de influência do feromônio("*α*") = 1;
+   - Parâmetro de influência do custo do caminho("*β*") = 5;
+   - Taxa de evaporação do feromônio("*ρ*") = 0.5;
+   - Quantidade de formigas("*m*") = |V|;
+   - Constante de atualização do feromônio("*Q*") = 500;
+   - Feromônio incial para todas as arestas("*t0*") = 1.0;
+     
+8. **Saída:**
    - Ao final de cada tentativa, a melhor ordem do tour e seu comprimento são exibidos.
 
