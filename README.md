@@ -1,6 +1,6 @@
 # Documentação
 
-Grupo: Geraldo Arthur Detomi, Diogo 
+Grupo: Geraldo Arthur Detomi, Diogo Augusto Martins Honorato
 
 ## Depêndencias
 Necessário ter instalado um compilador de linguagem C++ e o make.
