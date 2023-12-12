@@ -37,7 +37,7 @@ struct OtimizacaoColoniaFormigas {
     double beta = 5;
     double evaporacao = 0.5;
     double Q = 500;
-    double fatorFormiga = 0.8;
+    double fatorFormiga = 1.0;
     double fatorAleatorio = 0.01;
 
     int maxIteracoes = 1000;
