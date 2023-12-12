@@ -1,5 +1,7 @@
 # Documentação
 
+Grupo: Geraldo Arthur Detomi, Diogo 
+
 ## Depêndencias
 Necessário ter instalado um compilador de linguagem C++ e o make.
 - Distribuições Debian🐧
